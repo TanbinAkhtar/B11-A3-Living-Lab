@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Living-Lab</title>
+
+    <!-- Font-Sora -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <!-- Font-awesome-cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Tailwind-link -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- Daisy-UI-Link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .font-sora {
+            font-family: "Sora", serif;
+        }
+        .card {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    .card-body,
+.card-body > * {
+    margin: 0;
+    padding: 0;
+}
+
+.card img {
+    margin: 0;
+    padding: 0;
+    width: 100%; 
+    height: auto; 
+}
+
+}
+
+    </style>
+</head>
+<body class="font-sora">
+   <header>
+    <nav>
+        <div class="navbar">
+            <div class="navbar-start">
+                <a class="text-xl"><img src="c2-assets/logo-header.png" alt="Logo"></a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Product</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Contact us</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end hidden lg:flex gap-2">
+                <div class="lg:flex gap-5 m-4 ">
+                    <a href=""><i class="fas fa-thin fa-magnifying-glass"></i></a>
+                <a href=""><i class="fas fa-light fa-cart-shopping"></i></a>
+                </div>
+                <a class="btn bg-white border-green-600">Login</a>
+                <a class="btn bg-green-700 text-white">Register</a>
+            </div>
+            <div class="navbar-end lg:hidden">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <li><a>Product</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="banner">
+        <div class="hero min-h-screen">
+            <div class="hero-content text-center">
+              <div class="max-w-md">
+                <h1 class="text-5xl font-bold">Freshness You Can
+                  Count On, Prices You'll Love!</h1>
+                <p class="py-6">
+                  Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we've got you covered every day!
+                </p>
+            <div class="banner-img">
+                <img src="c2-assets/hero-vegetables.png" alt="">
+            </div>     
+            </div>
+            </div>
+          </div>
+    </div>
+   </header>
+   <main>
+
+    <!-------------------- Our-Services ------------------->
+    
+    <div class="my-32">
+        <h1 class="text-4xl font-semibold text-center my-7">Services</h1>
+        <div class=" flex gap-9 justify-center flex-wrap my-7">
+            <div class="card pb-5 px-5 bg-slate-100 w-80 shadow-xl ">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="c2-assets/service.png"
+                    alt="Shoes"
+                    class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title ">24/7 Services</h2>
+                  <p>We offer 24/7 services to deliver fresh, healthy products whenever you need them. Your well-being is our commitment around the clock.
+                  </p>
+                </div>
+              </div>
+            <div class="card bg-slate-100 w-80 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="c2-assets/delivery.png"
+                    alt="Shoes"
+                    class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Fast Delivery</h2>
+                  <p>We provide fast delivery to ensure fresh, quality products reach your doorstep on time. Experience convenience with every order!
+                  </p>
+                </div>
+              </div>
+            <div class="card bg-slate-100 w-80 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="c2-assets/healthy.png"
+                    alt="Shoes"
+                    class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Healthy Products</h2>
+                  <p>We offer a range of healthy products to support your well-being and lifestyle. Freshness and quality are our top priorities!
+                  </p>
+                </div>
+              </div>
+        </div>
+    </div>
+
+    <!--------------------- Popular-Product-Part --------------------->
+
+   <div class="flex flex-wrap gap-4 justify-center py-28 bg-slate-400">
+    <div class="card row-span-3 bg-base-100 w-85 shadow-xl bg-green-500">
+      <div class="px-6 ">
+        <h3 class="font-semibold text-white text-2xl pt-9 text-start">30% Off</h3>
+        <p class=" text-white text-sm text-start">Discover a world of treats, toys and essentials handpicked for</p>
+        <button class="btn bg-white">Buy Now</button>
+        <div class="card-actions justify-end">
+          <img class="w-50" src="c2-assets/vegetable-offer.png" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-2 lg:grid-cols-3 gap-4">
+           <div class="card bg-base-100 w-50 shadow-xl">
+           <div class="flex gap-2">
+            <figure>
+              <img class="bg-slate-400 rounded-xl mt-4 mx-3"
+                src="c2-assets/onion.png"
+                alt="Onion" />
+            </figure>
+            <div class=" pt-5">
+              <div class="rating flex gap-1 ">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /> 
+                <p  class="text-xs mt-2">4.5</p>
+              </div>
+              <p class="text-sm font-semibold">
+                Onion 1 KG 
+              </p>
+              <p class="text-xs">$39.99</p>
+            </div>
+           </div>
+          </div>
+           <div class="card bg-base-100 w-50 shadow-xl">
+           <div class="flex gap-2">
+            <figure>
+              <img class="bg-slate-400 rounded-xl mt-4 mx-3"
+                src="c2-assets/onion.png"
+                alt="Onion" />
+            </figure>
+            <div class=" pt-5">
+              <div class="rating flex gap-1 ">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /> 
+                <p  class="text-xs mt-2">4.5</p>
+              </div>
+              <p class="text-sm font-semibold">
+                Onion 1 KG 
+              </p>
+              <p class="text-xs">$39.99</p>
+            </div>
+           </div>
+          </div>
+           <div class="card bg-base-100 w-50 shadow-xl">
+           <div class="flex gap-2">
+            <figure>
+              <img class="bg-slate-400 rounded-xl mt-4 mx-3"
+                src="c2-assets/onion.png"
+                alt="Onion" />
+            </figure>
+            <div class=" pt-5">
+              <div class="rating flex gap-1 ">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /> 
+                <p  class="text-xs mt-2">4.5</p>
+              </div>
+              <p class="text-sm font-semibold">
+                Onion 1 KG 
+              </p>
+              <p class="text-xs">$39.99</p>
+            </div>
+           </div>
+          </div>
+           <div class="card bg-base-100 w-50 shadow-xl">
+           <div class="flex gap-2">
+            <figure>
+              <img class="bg-slate-400 rounded-xl mt-4 mx-3"
+                src="c2-assets/onion.png"
+                alt="Onion" />
+            </figure>
+            <div class=" pt-5">
+              <div class="rating flex gap-1 ">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /> 
+                <p  class="text-xs mt-2">4.5</p>
+              </div>
+              <p class="text-sm font-semibold">
+                Onion 1 KG 
+              </p>
+              <p class="text-xs">$39.99</p>
+            </div>
+           </div>
+          </div>
+           <div class="card bg-base-100 w-50 shadow-xl">
+           <div class="flex gap-2">
+            <figure>
+              <img class="bg-slate-400 rounded-xl mt-4 mx-3"
+                src="c2-assets/onion.png"
+                alt="Onion" />
+            </figure>
+            <div class=" pt-5">
+              <div class="rating flex gap-1 ">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /> 
+                <p  class="text-xs mt-2">4.5</p>
+              </div>
+              <p class="text-sm font-semibold">
+                Onion 1 KG 
+              </p>
+              <p class="text-xs">$39.99</p>
+            </div>
+           </div>
+          </div>
+           <div class="card bg-base-100 w-50 shadow-xl">
+           <div class="flex gap-2">
+            <figure>
+              <img class="bg-slate-400 rounded-xl mt-4 mx-3"
+                src="c2-assets/onion.png"
+                alt="Onion" />
+            </figure>
+            <div class=" pt-5">
+              <div class="rating flex gap-1 ">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /> 
+                <p  class="text-xs mt-2">4.5</p>
+              </div>
+              <p class="text-sm font-semibold">
+                Onion 1 KG 
+              </p>
+              <p class="text-xs">$39.99</p>
+            </div>
+           </div>
+          </div>
+           <div class="card bg-base-100 w-50 shadow-xl">
+           <div class="flex gap-2">
+            <figure>
+              <img class="bg-slate-400 rounded-xl mt-4 mx-3"
+                src="c2-assets/onion.png"
+                alt="Onion" />
+            </figure>
+            <div class=" pt-5">
+              <div class="rating flex gap-1 ">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /> 
+                <p  class="text-xs mt-2">4.5</p>
+              </div>
+              <p class="text-sm font-semibold">
+                Onion 1 KG 
+              </p>
+              <p class="text-xs">$39.99</p>
+            </div>
+           </div>
+          </div>
+           <div class="card bg-base-100 w-50 shadow-xl">
+           <div class="flex gap-2">
+            <figure>
+              <img class="bg-slate-400 rounded-xl mt-4 mx-3"
+                src="c2-assets/onion.png"
+                alt="Onion" />
+            </figure>
+            <div class=" pt-5">
+              <div class="rating flex gap-1 ">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /> 
+                <p  class="text-xs mt-2">4.5</p>
+              </div>
+              <p class="text-sm font-semibold">
+                Onion 1 KG 
+              </p>
+              <p class="text-xs">$39.99</p>
+            </div>
+           </div>
+          </div>
+           <div class="card bg-base-100 w-50 shadow-xl lg:block hidden">
+           <div class="flex gap-2">
+            <figure>
+              <img class="bg-slate-400 rounded-xl mt-4 mx-3"
+                src="c2-assets/onion.png"
+                alt="Onion" />
+            </figure>
+            <div class=" pt-5">
+              <div class="rating flex gap-1 ">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /> 
+                <p  class="text-xs mt-2">4.5</p>
+              </div>
+              <p class="text-sm font-semibold">
+                Onion 1 KG 
+              </p>
+              <p class="text-xs">$39.99</p>
+            </div>
+           </div>
+          </div>
+    </div>
+   </div>
+
+
+   <!------------------------ Arrival & Offer ---------------------->
+
+  
+   <div class="flex my-28 justify-center flex-wrap gap-5">
+    <div class="card bg-green-700 w-120 shadow-xl  ">
+      <div class="flex items-center justify-center">
+        <div class="card-body items-center text-center">
+          <img src="c2-assets/dawat-logo.png" alt="">
+          <button class="btn">Cook Exotic Dishes</button>
+          <h2>Up to 20% OFF</h2>
+        </div>
+        <figure class="px-10 pt-10">
+          <img
+            src="c2-assets/dawat-mock-up.png"
+            alt="Shoes"
+            class="rounded-xl" />
+        </figure>
+      </div>
+    </div>
+
+    <div class="card bg-blue-950  w-96 shadow-xl  ">
+      <div class="flex items-center justify-center">
+        <div class="card-body items-center text-center">
+          <img src="c2-assets/dawat-logo.png" alt="">
+          <button class="btn">Cook Exotic Dishes</button>
+          <h2>Up to 20% OFF</h2>
+        </div>
+        <figure class="px-10 pt-10">
+          <img
+            src="c2-assets/dawat-mock-up.png"
+            alt="Shoes"
+            class="rounded-xl" />
+        </figure>
+      </div>
+    </div>
+   </div>
+
+  </main>
+
+
+  <!--------------------- badge -------------------->
+  <div class="card bg-base-100 w-96 shadow-xl">
+    <figure class="px-10 pt-10">
+      <img
+        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+        alt="Shoes"
+        class="rounded-xl" />
+    </figure>
+    <div class="card-body items-center text-center">
+      <h2 class="card-title">Shoes!</h2>
+      <p>If a dog chews shoes whose shoes does he choose?</p>
+      <div class="card-actions">
+        <button class="btn btn-primary">Buy Now</button>
+      </div>
+    </div>
+  </div>
+  
+    <footer class="footer bg-green-600 text-base-content p-30 text-white">
+      <section>
+        <img src="c2-assets/logo-footer.png" alt="">
+      </section>
+      <nav>
+        <h6 class="footer-title">Company</h6>
+        <a class="link link-hover">Product</a>
+        <a class="link link-hover">Contact us</a>
+        <a class="link link-hover">Services</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Social</h6>
+        <div class="grid grid-flow-col gap-4">
+          <a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current">
+              <path
+                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
+            </svg>
+          </a>
+          <a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current">
+              <path
+                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
+            </svg>
+          </a>
+          <a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current">
+              <path
+                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+            </svg>
+          </a>
+        </div>
+      </nav>
+    </footer>
+
+</body>
+</html>
