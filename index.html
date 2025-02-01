@@ -45,11 +45,12 @@
     </style>
 </head>
 <body class="font-sora">
-   <header>
+
+   <header class="bg-linear-[360deg,#d9f99d_5%,#ecfccb_60%,#f7fee7_90%] ...">
     <nav>
-        <div class="navbar">
+        <div class="navbar overflow-x-hidden">
             <div class="navbar-start">
-                <a class="text-xl"><img src="c2-assets/logo-header.png" alt="Logo"></a>
+                <img src="c2-assets/logo-header.png" alt="Logo">
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1">
@@ -83,16 +84,19 @@
         </div>
     </nav>
 
+    <!----------------------------- Banner----------------------------->
     <div class="banner">
-        <div class="hero min-h-screen">
-            <div class="hero-content text-center">
-              <div class="max-w-md">
-                <h1 class="text-5xl font-bold">Freshness You Can
-                  Count On, Prices You'll Love!</h1>
-                <p class="py-6">
+        <div class="hero h-auto px-3 lg:min-h-screen">
+            <div class="hero text-center">
+              <div class="max-w-xl pt-9">
+                <h1 class="text-4xl font-bold">Freshness <span class="text-green-500">
+                  You Can <br>
+                  Count
+                </span> On, Prices You'll Love!</h1>
+                <p class="pt-3 text-sm">
                   Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we've got you covered every day!
                 </p>
-            <div class="banner-img">
+            <div class="banner-img ">
                 <img src="c2-assets/hero-vegetables.png" alt="">
             </div>     
             </div>
@@ -104,10 +108,10 @@
 
     <!-------------------- Our-Services ------------------->
     
-    <div class="my-32">
-        <h1 class="text-4xl font-semibold text-center my-7">Services</h1>
-        <div class=" flex gap-9 justify-center flex-wrap my-7">
-            <div class="card pb-5 px-5 bg-slate-100 w-80 shadow-xl ">
+    <div class="py-24 bg-none ">
+        <h1 class="text-4xl font-semibold text-center py-5">Services</h1>
+        <div class=" flex gap-9 justify-center flex-wrap py-7">
+            <div class="card pb-5 px-5 bg-gray-100 w-96 shadow-xl ">
                 <figure class="px-10 pt-10">
                   <img
                     src="c2-assets/service.png"
@@ -120,7 +124,7 @@
                   </p>
                 </div>
               </div>
-            <div class="card bg-slate-100 w-80 shadow-xl">
+            <div class="card bg-gray-100 w-96 shadow-xl">
                 <figure class="px-10 pt-10">
                   <img
                     src="c2-assets/delivery.png"
@@ -133,7 +137,7 @@
                   </p>
                 </div>
               </div>
-            <div class="card bg-slate-100 w-80 shadow-xl">
+            <div class="card bg-gray-100 w-96 shadow-xl">
                 <figure class="px-10 pt-10">
                   <img
                     src="c2-assets/healthy.png"
@@ -151,8 +155,8 @@
 
     <!--------------------- Popular-Product-Part --------------------->
 
-   <div class="flex flex-wrap gap-4 justify-center py-28 bg-slate-400">
-    <div class="card row-span-3 bg-base-100 w-85 shadow-xl bg-green-500">
+   <div class="flex flex-wrap gap-4 justify-center py-28 bg-gray-100">
+    <div class="card row-span-3 bg-base-100 w-96 shadow-xl bg-linear-[160deg,#65a30d_2%,#22c55e_40%,#d9f99d_90%] ...">
       <div class="px-6 ">
         <h3 class="font-semibold text-white text-2xl pt-9 text-start">30% Off</h3>
         <p class=" text-white text-sm text-start">Discover a world of treats, toys and essentials handpicked for</p>
@@ -167,7 +171,7 @@
            <div class="card bg-base-100 w-50 shadow-xl">
            <div class="flex gap-2">
             <figure>
-              <img class="bg-slate-400 rounded-xl mt-4 mx-3"
+              <img class="bg-gray-100 rounded-xl mt-4 mx-3"
                 src="c2-assets/onion.png"
                 alt="Onion" />
             </figure>
@@ -186,7 +190,64 @@
            <div class="card bg-base-100 w-50 shadow-xl">
            <div class="flex gap-2">
             <figure>
-              <img class="bg-slate-400 rounded-xl mt-4 mx-3"
+              <img class="bg-gray-100 rounded-xl mt-4 mx-3"
+                src="c2-assets/tomato.png"
+                alt="Onion" />
+            </figure>
+            <div class=" pt-5">
+              <div class="rating flex gap-1 ">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /> 
+                <p  class="text-xs mt-2">4.5</p>
+              </div>
+              <p class="text-sm font-semibold">
+                Tomato 500g 
+              </p>
+              <p class="text-xs">$39.99</p>
+            </div>
+           </div>
+          </div>
+           <div class="card bg-base-100 w-50 shadow-xl">
+           <div class="flex gap-2">
+            <figure>
+              <img class="bg-gray-100 rounded-xl mt-4 mx-3"
+                src="c2-assets/potato.png"
+                alt="Onion" />
+            </figure>
+            <div class=" pt-5">
+              <div class="rating flex gap-1 ">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /> 
+                <p  class="text-xs mt-2">4.5</p>
+              </div>
+              <p class="text-sm font-semibold">
+                Potato 1 KG 
+              </p>
+              <p class="text-xs">$39.99</p>
+            </div>
+           </div>
+          </div>
+           <div class="card bg-base-100 w-50 shadow-xl">
+           <div class="flex gap-2">
+            <figure>
+              <img class="bg-gray-100 rounded-xl mt-4 mx-3"
+                src="c2-assets/tomato.png"
+                alt="Onion" />
+            </figure>
+            <div class=" pt-5">
+              <div class="rating flex gap-1 ">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /> 
+                <p  class="text-xs mt-2">4.5</p>
+              </div>
+              <p class="text-sm font-semibold">
+                Tomato 500g 
+              </p>
+              <p class="text-xs">$39.99</p>
+            </div>
+           </div>
+          </div>
+           <div class="card bg-base-100 w-50 shadow-xl">
+           <div class="flex gap-2">
+            <figure>
+              <img class="bg-gray-100 rounded-xl mt-4 mx-3"
                 src="c2-assets/onion.png"
                 alt="Onion" />
             </figure>
@@ -205,7 +266,26 @@
            <div class="card bg-base-100 w-50 shadow-xl">
            <div class="flex gap-2">
             <figure>
-              <img class="bg-slate-400 rounded-xl mt-4 mx-3"
+              <img class="bg-gray-100 rounded-xl mt-4 mx-3"
+                src="c2-assets/potato.png"
+                alt="Onion" />
+            </figure>
+            <div class=" pt-5">
+              <div class="rating flex gap-1 ">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /> 
+                <p  class="text-xs mt-2">4.5</p>
+              </div>
+              <p class="text-sm font-semibold">
+                Potato 1 KG 
+              </p>
+              <p class="text-xs">$39.99</p>
+            </div>
+           </div>
+          </div>
+           <div class="card bg-base-100 w-50 shadow-xl">
+           <div class="flex gap-2">
+            <figure>
+              <img class="bg-gray-100 rounded-xl mt-4 mx-3"
                 src="c2-assets/onion.png"
                 alt="Onion" />
             </figure>
@@ -224,8 +304,8 @@
            <div class="card bg-base-100 w-50 shadow-xl">
            <div class="flex gap-2">
             <figure>
-              <img class="bg-slate-400 rounded-xl mt-4 mx-3"
-                src="c2-assets/onion.png"
+              <img class="bg-gray-100 rounded-xl mt-4 mx-3"
+                src="c2-assets/potato.png"
                 alt="Onion" />
             </figure>
             <div class=" pt-5">
@@ -234,83 +314,7 @@
                 <p  class="text-xs mt-2">4.5</p>
               </div>
               <p class="text-sm font-semibold">
-                Onion 1 KG 
-              </p>
-              <p class="text-xs">$39.99</p>
-            </div>
-           </div>
-          </div>
-           <div class="card bg-base-100 w-50 shadow-xl">
-           <div class="flex gap-2">
-            <figure>
-              <img class="bg-slate-400 rounded-xl mt-4 mx-3"
-                src="c2-assets/onion.png"
-                alt="Onion" />
-            </figure>
-            <div class=" pt-5">
-              <div class="rating flex gap-1 ">
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /> 
-                <p  class="text-xs mt-2">4.5</p>
-              </div>
-              <p class="text-sm font-semibold">
-                Onion 1 KG 
-              </p>
-              <p class="text-xs">$39.99</p>
-            </div>
-           </div>
-          </div>
-           <div class="card bg-base-100 w-50 shadow-xl">
-           <div class="flex gap-2">
-            <figure>
-              <img class="bg-slate-400 rounded-xl mt-4 mx-3"
-                src="c2-assets/onion.png"
-                alt="Onion" />
-            </figure>
-            <div class=" pt-5">
-              <div class="rating flex gap-1 ">
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /> 
-                <p  class="text-xs mt-2">4.5</p>
-              </div>
-              <p class="text-sm font-semibold">
-                Onion 1 KG 
-              </p>
-              <p class="text-xs">$39.99</p>
-            </div>
-           </div>
-          </div>
-           <div class="card bg-base-100 w-50 shadow-xl">
-           <div class="flex gap-2">
-            <figure>
-              <img class="bg-slate-400 rounded-xl mt-4 mx-3"
-                src="c2-assets/onion.png"
-                alt="Onion" />
-            </figure>
-            <div class=" pt-5">
-              <div class="rating flex gap-1 ">
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /> 
-                <p  class="text-xs mt-2">4.5</p>
-              </div>
-              <p class="text-sm font-semibold">
-                Onion 1 KG 
-              </p>
-              <p class="text-xs">$39.99</p>
-            </div>
-           </div>
-          </div>
-           <div class="card bg-base-100 w-50 shadow-xl">
-           <div class="flex gap-2">
-            <figure>
-              <img class="bg-slate-400 rounded-xl mt-4 mx-3"
-                src="c2-assets/onion.png"
-                alt="Onion" />
-            </figure>
-            <div class=" pt-5">
-              <div class="rating flex gap-1 ">
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /> 
-                <p  class="text-xs mt-2">4.5</p>
-              </div>
-              <p class="text-sm font-semibold">
-                Onion 1 KG 
+                Potato 1 KG 
               </p>
               <p class="text-xs">$39.99</p>
             </div>
@@ -319,8 +323,8 @@
            <div class="card bg-base-100 w-50 shadow-xl lg:block hidden">
            <div class="flex gap-2">
             <figure>
-              <img class="bg-slate-400 rounded-xl mt-4 mx-3"
-                src="c2-assets/onion.png"
+              <img class="bg-gray-100 rounded-xl mt-4 mx-3"
+                src="c2-assets/tomato.png"
                 alt="Onion" />
             </figure>
             <div class=" pt-5">
@@ -329,7 +333,7 @@
                 <p  class="text-xs mt-2">4.5</p>
               </div>
               <p class="text-sm font-semibold">
-                Onion 1 KG 
+                Tomato 500g 
               </p>
               <p class="text-xs">$39.99</p>
             </div>
@@ -376,6 +380,8 @@
     </div>
    </div>
 
+
+
   </main>
 
 
@@ -400,6 +406,7 @@
     </div>
   </div>
 </div>
+
 
   <footer class="footer bg-green-600 text-base-content px-20 pt-50 pb-20 text-white">
     <section>
